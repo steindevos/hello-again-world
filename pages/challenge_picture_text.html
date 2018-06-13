@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .div1 {
+            position: relative;
+            width: 250px;
+        }
+
+        .image {
+            position: absolute;
+            border: solid 1px gray;
+            width: 250px;
+            z-index: 10;
+            border-radius: 10px;
+        }
+
+        body article div span {
+            position: absolute;
+            top: 280px;
+            left: 18px;
+            font-family: sans-serif;
+            background-color: white;
+            opacity: 0.6;
+            z-index: 5;
+        }
+
+        .image:hover {
+            z-index: 0;
+            transition: ;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div class="div1">
+            <img class="image" src="../media/marvin.jpg" alt="Marvin the paranoid android"></img>
+            <span class="text">Life. Don't talk to me about life.</span>
+        </div>
+    </article>
+</body>
+
+</html>

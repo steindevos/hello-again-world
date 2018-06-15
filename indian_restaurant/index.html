@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <style type="text/css">
         body {
             font-size: 2rem;
         }
+
         .lobsterFont {
             font-family: "Lobster", cursive;
         }
@@ -28,20 +30,24 @@
         .navbar-brand {
             padding: 0px;
         }
-        
+
         .navbar-brand:hover {
             animation: rotateOnHover 0.6s linear;
         }
-        
+
         @keyframes rotateOnHover {
-            0% {transform: rotate(0deg);}
-            50% {transform: rotate(180deg);
-                transform: scale(2);
+            0% {
+                transform: rotate(0deg) scale(1);
             }
-            100% {transform: rotate(360deg);}
+            50% {
+                transform: rotate(180deg) scale(2);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
         }
-    
-        
+
+
         .mainText {
             font-size: 2rem;
         }
@@ -54,25 +60,41 @@
             width: 100%;
             min-height: 420px;
         }
-        
+
         #headerDiv {
             position: absolute;
             width: 100%;
         }
-        
+
         header span {
             position: relative;
             top: 100px;
             left: 0%;
             font-size: 4rem;
-            
+
         }
-        
+
         header span h1 {
             font-size: 5rem;
         }
-        
-     
+
+        h2 {
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .mainArticle {
+            margin-top: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+       
+       .nav li {
+           color: #c1272d;
+       }
+       
     </style>
 </head>
 
@@ -86,13 +108,13 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
-                <span class="lobsterFont headerText">India Spices</span>
+                <a href="index.html"><span class="lobsterFont headerText">India Spices</span></a>
             </div>
 
             <ul id="navbarCollapse" class="nav navbar-nav navbar-right collapse navbar-collapse">
                 <li><a href="">Our story</a></li>
                 <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
         </div>
@@ -103,20 +125,21 @@
         <div id="headerDiv"><span class="text-center align-baseline"><h1>Welcome to<br>India Spices<br></h1><h3>The real taste of India</h3></span></div>
 
     </header>
-    <div class="row">
-        <div class="col-sm-12 text-center"><h1 class='lobsterFont'>Our story</h1></div>
-    </div>
 
-    <div class="containter">
+    <div class="containter mainArticle">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-12 col-lg-6">
                 <video width="600px" controls autoplay loop muted>
                     <source src='videos/video.mp4#t=0,30' type="video/mp4"> 
                 </video>
             </div>
-            <div class="col-sm-6">
-                <div class="text-center"><h2>We care about food</h2></div>
-                <P>Hi, my name is Zaphod and I am the chef of India Spices. I grew up in India where I learned about the magic of Indian food. From my mother I lea ... oh no ... not lorem ipsum again .. nooooLorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ab quos at illum fugiat, unde officiis inventore aspernatur eligendi similique. Optio quam ipsam magnam aliquid totam rem quaerat enim? Explicabo earum, illo reprehenderit laudantium, quaerat voluptate dolorem fugit et autem in est cum perferendis aut officiis eum! Vitae, corporis at.  </P>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="text-center">
+                    <h2>We care about food</h2>
+                </div>
+                <P>Hi, my name is Zaphod and I am the chef of India Spices. I grew up in India where I learned about the magic of Indian food. From my mother I lea ... oh no ... not lorem ipsum again .. nooooLorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Ipsam ab quos at illum fugiat, unde officiis inventore aspernatur eligendi similique. Optio quam ipsam magnam aliquid totam rem quaerat enim? Explicabo earum, illo reprehenderit laudantium, quaerat voluptate dolorem fugit et
+                    autem in est cum perferendis aut officiis eum! Vitae, corporis at. </P>
             </div>
 
         </div>

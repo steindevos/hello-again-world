@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <style type="text/css">
         body {
             font-size: 2rem;
         }
+
         .lobsterFont {
             font-family: "Lobster", cursive;
         }
@@ -28,7 +30,7 @@
         .navbar-brand {
             padding: 0px;
         }
-        
+
         .mainText {
             font-size: 2rem;
         }
@@ -41,44 +43,70 @@
             width: 100%;
             min-height: 420px;
         }
-        
+
         #headerDiv {
             position: absolute;
             width: 100%;
         }
-        
+
         header span {
             position: relative;
             top: 100px;
             left: 0%;
             font-size: 4rem;
-            
+
         }
-        
+
         header span h1 {
             font-size: 5rem;
         }
-        
+
         .dottedBorder {
-            border-bottom: dotted 1px gray; 
+            border-bottom: dotted 1px gray;
         }
-        
+
         .imgFood {
             margin: 40px 0px;
-            border-radius: 10px;
+            border-radius: 0px 100px 0px 100px;
         }
-        
-             .navbar-brand:hover {
+
+        .navbar-brand:hover {
             animation: rotateOnHover 0.6s linear;
         }
-        
+
         @keyframes rotateOnHover {
-            0% {transform: rotate(0deg) scale(1);}
-            50% {transform: rotate(180deg) scale(2);}
-            100% {transform: rotate(360deg) scale(1);}
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(2);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
         }
-    
-     
+
+        .smallText {
+            font-size: 1.5rem;
+            
+        }
+        
+        .alignLeft {
+            text-align: left;
+        }
+        
+        .alignRight {
+            text-align: right;
+        }
+
+        h2 {
+            font-family: 'Indie Flower', cursive;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -92,36 +120,46 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
-                <span class="lobsterFont headerText">India Spices</span>
+                <a href="../index.html" class=""><span class="lobsterFont headerText">India Spices</span></a>
             </div>
 
             <ul id="navbarCollapse" class="nav navbar-nav navbar-right collapse navbar-collapse">
                 <li><a href="../index.html">Our story</a></li>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
             </ul>
         </div>
     </nav>
-     
-     <div class="container">
-         <div class="row dottedBorder">
-             <div class="col-sm-6 text-center">
-                 <img class="imgFood" src="../images/curry.jpg" alt="our delicious curry" width="60%">
-             </div>
-             <div class="col-sm-6">
-                 
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-sm-6 text-center"></div>
-             <div class="col-sm-6 text-center">
-                 <img class="imgFood" src="../images/spices.jpg" alt="we like it spicy" width="60%">
-             </div>
-         </div>
-         
-         
-     </div>
+
+    <div class="container">
+        <div class="row dottedBorder">
+            <div class="col-sm-6 text-center">
+                <img class="imgFood" src="../images/curry.jpg" alt="our delicious curry" width="60%">
+            </div>
+            <div class="col-sm-6">
+                <h2 class="text-center">Curries</h2>
+                <p class="smallText alignLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ratione aliquam consequatur, porro tenetur odit, dolor nobis pariatur, mollitia ex dolorem. Deserunt dignissimos ad necessitatibus maiores nesciunt vitae amet hic est
+                    impedit consequuntur distinctio sit, totam, dolore qui vero corporis omnis ipsam. Quo, iure voluptatibus at sint dolor odio in. Magnam sit veniam saepe ipsam dolor doloribus, magni est corporis, molestias recusandae voluptates reprehenderit!
+                    Repellendus saepe totam expedita ad hic quae voluptatum molestiae, animi, quibusdam voluptate assumenda laborum delectus dicta, dolore magni. Fuga earum, distinctio ipsam, perferendis harum eius aliquid minima! Quisquam quo assumenda
+                    soluta veniam commodi quod neque porro!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <h2 class="text-center">Spices</h2>
+                <p class="smallText alignRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aut eaque debitis, dignissimos numquam, aliquam deleniti rem eum explicabo illo iusto ullam, fuga consequatur qui eligendi libero placeat esse error quod facere. Libero
+                    officia suscipit porro accusamus eius adipisci, ipsa possimus! Aut ad illo temporibus minima, ipsam similique quas sequi alias veniam recusandae vitae non quae labore eos delectus minus, consequuntur ipsum aliquid nulla necessitatibus,
+                    iste illum fugit corporis, modi. A minima saepe eveniet mollitia ipsam veniam debitis impedit quaerat iusto laboriosam iste non sapiente quo harum laborum adipisci distinctio autem reiciendis quam laudantium enim vel, itaque error.
+                    Sunt, dicta!</p>
+            </div>
+            <div class="col-sm-6 text-center">
+                <img class="imgFood" src="../images/spices.jpg" alt="we like it spicy" width="60%">
+            </div>
+        </div>
+
+
+    </div>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
